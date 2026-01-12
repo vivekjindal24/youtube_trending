@@ -1,0 +1,55 @@
+{
+  "created_date": "2026-01-12 15:36:53",
+  "random_state": 42,
+  "rank_threshold": 10,
+  "train_size": 29374,
+  "test_size": 7344,
+  "features": [
+    "view_count",
+    "like_count",
+    "comment_count",
+    "likes_per_view",
+    "comments_per_view",
+    "like_to_comment_ratio",
+    "title_length",
+    "title_word_count",
+    "description_length",
+    "description_word_count",
+    "tag_count",
+    "publish_day_of_week",
+    "has_question_mark_in_title",
+    "has_exclamation_in_title",
+    "has_official_in_title",
+    "has_trailer_in_title",
+    "has_live_in_title",
+    "has_challenge_in_title",
+    "is_weekend",
+    "language",
+    "title",
+    "description"
+  ],
+  "model_performance": {
+    "logistic_regression": {
+      "accuracy": 0.6966230936819172,
+      "precision": 0.36033724340175954,
+      "recall": 0.6705320600272852,
+      "f1": 0.4687649022412971,
+      "roc_auc": 0.747603151297854
+    },
+    "random_forest": {
+      "accuracy": 0.7487745098039216,
+      "precision": 0.4119014411901441,
+      "recall": 0.6043656207366985,
+      "f1": 0.489908764169201,
+      "roc_auc": 0.7663610396386368
+    },
+    "gradient_boosting": {
+      "accuracy": 0.8078703703703703,
+      "precision": 0.5669099756690997,
+      "recall": 0.15893587994542974,
+      "f1": 0.2482685135855088,
+      "roc_auc": 0.7716264708462708
+    }
+  },
+  "best_model": "Gradient Boosting"
+}

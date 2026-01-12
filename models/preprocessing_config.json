@@ -1,0 +1,50 @@
+{
+  "numeric_features": [
+    "view_count",
+    "like_count",
+    "comment_count",
+    "likes_per_view",
+    "comments_per_view",
+    "like_to_comment_ratio",
+    "title_length",
+    "title_word_count",
+    "description_length",
+    "description_word_count",
+    "tag_count",
+    "publish_day_of_week"
+  ],
+  "categorical_features": [
+    "language"
+  ],
+  "text_features": [
+    "title",
+    "description"
+  ],
+  "binary_features": [
+    "has_question_mark_in_title",
+    "has_exclamation_in_title",
+    "has_official_in_title",
+    "has_trailer_in_title",
+    "has_live_in_title",
+    "has_challenge_in_title",
+    "is_weekend"
+  ],
+  "engineered_features": [
+    "title_length",
+    "title_word_count",
+    "description_length",
+    "description_word_count",
+    "tag_count",
+    "has_question_mark_in_title",
+    "has_exclamation_in_title",
+    "has_official_in_title",
+    "has_trailer_in_title",
+    "has_live_in_title",
+    "has_challenge_in_title",
+    "publish_day_of_week",
+    "is_weekend",
+    "likes_per_view",
+    "comments_per_view",
+    "like_to_comment_ratio"
+  ]
+}

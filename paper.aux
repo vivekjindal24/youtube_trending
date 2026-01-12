@@ -1,0 +1,90 @@
+\relax 
+\citation{figueiredo2011tube}
+\citation{szabo2010predicting}
+\citation{borghol2012untold}
+\citation{szabo2010predicting}
+\citation{figueiredo2011tube}
+\citation{borghol2012untold}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Viral Content Prediction}{1}{}\protected@file@percent }
+\citation{salton1988term}
+\citation{devlin2018bert}
+\citation{hastie2009elements}
+\citation{hosmer2013applied}
+\citation{breiman2001random}
+\citation{friedman2001greedy,chen2016xgboost}
+\citation{chawla2002smote,he2008adasyn}
+\citation{davis2006relationship}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Classification Methodology}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Positioning of Present Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Dataset and Problem Formulation}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Dataset Description}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Target Variable Definition}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Class distribution showing 85\% non-trending (class 0) and 15\% trending (class 1) videos. The moderate imbalance necessitates stratified sampling and balanced class weights during model training.}}{2}{}\protected@file@percent }
+\newlabel{fig:class_dist}{{1}{2}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Data Preprocessing}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Train-Test Partitioning}{2}{}\protected@file@percent }
+\citation{salton1988term}
+\citation{hosmer2013applied}
+\citation{breiman2001random}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Feature Engineering}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Textual Features}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Temporal Features}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Engagement Ratio Features}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Categorical Encoding}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Preprocessing Pipeline}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Classification Models}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Problem Formulation}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Baseline: Dummy Classifier}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Logistic Regression}{3}{}\protected@file@percent }
+\citation{friedman2001greedy}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Random Forest}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Gradient Boosting}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Experimental Results}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Evaluation Metrics}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Exploratory Data Analysis}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Distribution of engagement metrics. Raw counts exhibit heavy right skew; log-scale reveals more structure. This distribution pattern motivates normalized engagement rate features.}}{4}{}\protected@file@percent }
+\newlabel{fig:engagement_dist}{{2}{4}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Engagement metrics stratified by trending status. Trending videos (class 1) exhibit substantially higher values across all three metrics, particularly for normalized engagement rates.}}{4}{}\protected@file@percent }
+\newlabel{fig:engagement_by_trending}{{3}{4}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Correlation heatmap of numeric features. Raw engagement metrics exhibit strong multicollinearity, while engagement ratios capture distinct information. Target variable correlates moderately with both feature types.}}{4}{}\protected@file@percent }
+\newlabel{fig:correlation}{{4}{4}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Model Performance}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Classification Performance on Test Set}}{5}{}\protected@file@percent }
+\newlabel{tab:results}{{I}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparative performance across evaluation metrics. Gradient Boosting consistently achieves highest scores. The baseline's zero minority class metrics confirm it provides no useful discrimination.}}{5}{}\protected@file@percent }
+\newlabel{fig:model_comparison}{{5}{5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}ROC Analysis}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces ROC curves demonstrating discrimination ability. All trained models substantially outperform random chance. Gradient Boosting achieves optimal separation across threshold values.}}{5}{}\protected@file@percent }
+\newlabel{fig:roc_curves}{{6}{5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-E}}Error Analysis}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Discussion}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Interpretation of Results}{5}{}\protected@file@percent }
+\citation{szabo2010predicting,figueiredo2011tube}
+\citation{devlin2018bert}
+\citation{borghol2012untold}
+\citation{lundberg2017unified}
+\citation{devlin2018bert}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{figueiredo2011tube}{1}
+\bibcite{szabo2010predicting}{2}
+\bibcite{borghol2012untold}{3}
+\bibcite{salton1988term}{4}
+\bibcite{devlin2018bert}{5}
+\bibcite{hastie2009elements}{6}
+\bibcite{hosmer2013applied}{7}
+\bibcite{breiman2001random}{8}
+\bibcite{friedman2001greedy}{9}
+\bibcite{chen2016xgboost}{10}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Practical Implications}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Limitations and Threats to Validity}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-D}}Comparison with Prior Work}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion and Future Work}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{6}{}\protected@file@percent }
+\bibcite{chawla2002smote}{11}
+\bibcite{he2008adasyn}{12}
+\bibcite{davis2006relationship}{13}
+\bibcite{lundberg2017unified}{14}
+\gdef \@abspage@last{7}
